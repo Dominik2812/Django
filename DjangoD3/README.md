@@ -17,9 +17,15 @@ In the following I will explain how the d3 visualization works and how drag and 
 To list all "Bubbles" in the "views.py" file the function "bubbles()" is called . The function "buildTree()" then retrieves all "Bubbles" from the Database and transforms all those objects, their children and related "Bubbles" into JSON format via the "listRecursive()" function. 
 ![views](pics/views.png?raw=true "views")
 
-The JSON is then passed in the variable "family" to the "reservoir_link.html". This template has a three fold structure. The JSON is packed into "var myArr" via Javascript (part 1 in the image below). A "<div>" element with the id ="chart" (step 2) is needed to display the d3 visualisation, which still has to be created. The creation of the graphics is managed by part 3. There the first link enables your code to handle d3 elements in general. The second link is a link to the local "reservoir.js" that receives the JSON and converts it into graphics, which will be discussed in the next paragraph. The third link script part serves to change the "id=chart" to "id=full" after the graphics has been created and displayed. In this way several independant d3-graphics can be displaed on the same page, as it is necessary for the detail view, where besides the reservoir also a the "Bubble" of interest is displayed both with related "Bubbles" and children.
+The JSON is then passed in the variable "family" to the "reservoir_link.html". This template has a three fold structure. The JSON is packed into "var myArr" via Javascript (part 1 in the image below). A "div" element with the id ="chart" (step 2) is needed to display the d3 visualisation, which still has to be created. The creation of the graphics is managed by part 3. There the first link enables your code to handle d3 elements in general. The second link is a link to the local "reservoir.js" that receives the JSON and converts it into graphics, which will be discussed in the next paragraph. The third link script part serves to change the "id=chart" to "id=full" after the graphics has been created and displayed. In this way several independant d3-graphics can be displaed on the same page, as it is necessary for the detail view, where besides the reservoir also a the "Bubble" of interest is displayed both with related "Bubbles" and children.
+  
+  
+  
 ![template](pics/template.png?raw=true "template")
-In the "reservoir.js" the JSON is read by teh function getData() and passed into a forloop that takes care of teh visualization but also of the "events" that are attached to each "Bubble", taht is represented as a "<g>" element in the html part. 
+
+
+
+In the "reservoir.js" the JSON is read by teh function getData() and passed into a forloop that takes care of teh visualization but also of the "events" that are attached to each "Bubble", taht is represented as a "g" element in the html part. 
 ![script](pics/script.png?raw=true "script")
 ### Drag and Drop of "Bubbles":
 
