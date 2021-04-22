@@ -10,5 +10,5 @@ urlpatterns=[
     path('create/item/',views.createItem,name='createItem'),
     path('link/<int:pk1>/<int:pk2>',views.link,name='Link'),
     path('delete/item/<int:pk>/', views.DeleteItemView.as_view()),
-    path('uncouple/item/<int:pk>/<int:pk2>/', views.DeleteItemView.as_view()),
+
 ]

@@ -19,16 +19,13 @@ const dragstart_handler = e => {
 
 const dragover_handler = e => {
   e.preventDefault();
-  // e.dataTransfer.dropEffect = "move";
 }
 
 const delCategory = e => {
 
   e.preventDefault();
-  // boxId = e.dataTransfer.getData("text/plain");
   boxId=e.target.id
   CatId=boxId.substring(boxId.length-(boxId.length-7))
-  console.log(CatId)
   completeUrl=String(window.location.href).substring(0,22)
   new_path= completeUrl+'bucket/delete/category/'+String(CatId);
   window.location.href=new_path
@@ -63,17 +60,14 @@ const uncouple = e => {
 
 }
 const linkCatItem = e => {
-
   e.preventDefault();
   boxId = e.dataTransfer.getData("text/plain");
-  
   ItemId=boxId.substring(boxId.length-(boxId.length-5))
   CatId=e.target.id.substring(e.target.id.length-(e.target.id.length-7))
   console.log(boxId, ItemId, CatId, typeof boxId)
   completeUrl=String(window.location.href).substring(0,22)
   new_path= completeUrl+'bucket/link/'+String(CatId)+'/'+String(ItemId);
   window.location.href=new_path
-
 }
 
 window.addEventListener('DOMContentLoaded', () => {

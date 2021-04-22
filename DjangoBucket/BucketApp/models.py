@@ -14,7 +14,5 @@ class Category(models.Model):
 class Item(models.Model):
     title = models.CharField(max_length=200, default='Name of the item')
     categories = models.ManyToManyField(Category, blank=True,related_name='relatedItems',db_column='relatedItems',symmetrical=False)
-
-
     def __str__(self):
         return self.title
