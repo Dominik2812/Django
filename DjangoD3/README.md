@@ -3,9 +3,11 @@
 
 ![screen](pics/screen.png?raw=true "screen")
 
-## Motivation
-A Django app that realizes "Drag and Drop" feature in combination with D3 visualization. 
-The app visualizes OneToMany and ManyToMany relationships of Data Base objects.  CRUD operations are carried out by drag and drop. 
+## Summary
+A Django app that realizes "Drag and Drop" feature in combination with d3 visualization. 
+The app visualizes OneToMany and ManyToMany relationships of Data Base objects via d3 (Data Driven Documents). Via Drag and Drop objects can be deleted or viewed in detail. The objects are called "Bubbles" and consist of a core that can be considered as a category (such as "Sports") and a shell which consists of other "Bubbles" derive from the core (such as "running" or "juggling"). The "Bubbles" in the shell also have further relationships to other "Bubbles" and so on. 
+
+The Relationship are either of type ManyToMany ("related") or of OneToMany ("children"). To define those relationships drag a bubble of your choice into the detail field (e.g.  "mousedown" on the field "Jakob" and "mouseup " on the detail field.
 
 ## Code Details 
 
