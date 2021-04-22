@@ -6,8 +6,8 @@ The app visualizes OneToMany and ManyToMany relationships of Data Base objects. 
 
 ## Challenge
 A Django app that realizes "Drag and Drop" feature in combination with D3 visualization. 
-![Events](Events.jpg?raw=true "Events")
-<<<<<<< HEAD
+![Events](pics/dataflowDragDrop.png?raw=true "Events")
+
 
 Moreover the actions are categorized, such that the actions " Django " and "Laravel"  would derive from "programming" and "running" from sports. 
 Each of those action can then serve as a label for futher actions, such as "uploading on github" apllys to both "Django" and "laravel". 
@@ -15,9 +15,6 @@ please consider the code not as ready to use app but as a template that may be m
 
 
 The project combines Django architecture with Javascript (Vanilla), Google API and d3 design.
-The design is kept simple yet any suggestions or imporvements are welcome. 
+The design is kept simple yet.
 
-![Details](Details.jpg?raw=true "Details")
-"# DjangoD3" 
-=======
->>>>>>> c34d59dbbd0be98b88221c6acb5959ef85eceda0
+![Details](pics/screen.png?raw=true "Details")
