@@ -10,13 +10,15 @@ The app visualizes OneToMany and ManyToMany relationships of Data Base objects v
 The Relationship are either of type ManyToMany ("related") or of OneToMany ("children"). To define those relationships drag a bubble of your choice into the detail field (e.g.  "mousedown" on the field "Jakob" and "mouseup " on the detail field.
 
 ## Code Details 
-In the following I will explain how the d3 visualization works 
+In the following I will explain how the d3 visualization works and how drag and drop mechanisms can be applied. 
 
 
+### Visualization via d3
 
+![views](pics/views.png?raw=true "views")
 ![script](pics/script.png?raw=true "script")
 ![template](pics/template.png?raw=true "template")
-![views](pics/views.png?raw=true "views")
+
 
 ![dataflowDragDrop](pics/dataflowDragDrop.png?raw=true "dataflowDragDrop")
 
