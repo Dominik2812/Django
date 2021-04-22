@@ -18,15 +18,20 @@ Thoughts are represented by Item objects that can be linked to several Categorie
 
 ### The Javascript CRUD2.js
 
-
+#### submit
 ![submit](pics/submit.png?raw=true "submit")
+submit a form via Javascript
 
+#### Start any drag and drop event like this
 ![DragDrop](pics/DragDrop.png?raw=true "DragDrop")
 
+#### call the delete url by a drop-event
 ![delete](pics/delete.png?raw=true "delete")
 
+#### call the link url via drop event
 ![link](pics/link.png?raw=true "link")
 
+#### provide all elements of a html list with the events described above
 ![provide](pics/provide.png?raw=true "provide")
 
 
