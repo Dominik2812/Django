@@ -12,7 +12,22 @@ The project illustrates important interaction between the Django Database and Ja
 ### models.py 
 Thoughts are represented by Item objects that can be linked to several Categories via ManyToMany relationships. 
 
+
+![models](pics/models.png?raw=true "models")
+
+
 ### The Javascript CRUD2.js
+
+
+![submit](pics/submit.png?raw=true "submit")
+
+![DragDrop](pics/DragDrop.png?raw=true "DragDrop")
+
+![delete](pics/delete.png?raw=true "delete")
+
+![link](pics/link.png?raw=true "link")
+
+![provide](pics/provide.png?raw=true "provide")
 
 
 
