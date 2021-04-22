@@ -18,9 +18,9 @@ Thoughts are represented by Item objects that can be linked to several Categorie
 
 ### The Javascript CRUD2.js
 
-#### submit
+#### submit a form via Javascript
 ![submit](pics/submit.png?raw=true "submit")
-submit a form via Javascript
+
 
 #### Start any drag and drop event like this
 ![DragDrop](pics/DragDrop.png?raw=true "DragDrop")
