@@ -1,0 +1,26 @@
+{% load static %}
+
+{% if bubble_related %}
+    <script>
+        bubble_related=document.getElementById('bubble_related').innerHTML
+        var myArr = bubble_related;
+        console.log('myArr',myArr)
+    </script>
+    <div class="card" id="related_reservoir">
+        <h1>related Bubbles</h1>
+
+      {% include "D3App/bubbles/d3Chart.html" %}
+    </div>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="{% static 'D3App/js/reservoir.js' %}" charset="utf-8">  </script>
+    <script>d3.select("#chart").attr("id", 'full')</script>
+{% else %}
+    <script>
+        var myArr = '[]';
+    </script>
+{% endif %}
+
+
+
+
+

@@ -1,0 +1,42 @@
+{% extends "D3App/base/motherboard.html" %}
+
+{% block body_block %}
+{% load static %}
+
+{% if family %}
+  <div id='family' hidden>{{family}}</div>
+
+  <script>
+      rec=document.getElementById('family').innerHTML
+      var myArr = rec;
+  </script>
+
+    <div class="card" id="reservoir">   
+      <h1>Reservoir </h1> 
+        <div class="d-flex flex-row">
+          {% include "D3App/bubbles/d3Chart.html" %}
+          {% include "D3App/bubbles/dumpholes.html" %}  
+        </div>
+ 
+    </div>
+
+
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="{% static 'D3App/js/reservoir.js' %}" charset="utf-8">  </script>
+    <script>d3.select("#chart").attr("id", 'full')</script>
+{% else %}
+  <script>
+      var myArr = '[]';
+  </script>
+{% endif %}
+
+
+<script>d3.select("#chart").attr("id", 'full')</script>
+
+{% if topic %}
+{% include "D3App/bubbles/singleBubble.html" %}
+{% endif %}
+
+
+
+{% endblock %}

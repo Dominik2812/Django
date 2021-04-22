@@ -1,0 +1,29 @@
+{% load static %}
+
+
+
+{% if bubble_children %}
+    <script>
+        bubble_children=document.getElementById('bubble_children').innerHTML
+        var myArr = bubble_children;
+    </script>
+
+    <div class="card" id="children_reservoir">
+        <h1>Children</h1>
+      {% include "D3App/bubbles/d3Chart.html" %}
+    </div>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="{% static 'D3App/js/reservoir.js' %}" charset="utf-8">  </script>
+    <script>d3.select("#chart").attr("id", 'full')</script>
+{% else %}
+    <script>
+        var myArr = '[]';
+    </script>
+{% endif %}
+
+
+
+
+
+
+
