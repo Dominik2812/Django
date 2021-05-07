@@ -61,6 +61,8 @@ class Funcs():
                 hover=dict()
                 for col in pdFrame.columns:
                     hover[col]=pdFrame[col]
+                print("hover:",hover)
+                print("df_plot,df_plot",df_plot)
                 fig = px.scatter(df_plot,  x="C1", y="C2", color="Classi",hover_data=hover) 
                 fig.update_layout(showlegend=False)
                 Plot = plot(fig, output_type='div')
