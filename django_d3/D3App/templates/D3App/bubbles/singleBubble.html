@@ -1,0 +1,22 @@
+
+{% load static %}
+
+
+
+<div id='both' hidden>{{both}}</div>
+<div id='bubble_children' hidden>{{bubble_children}}</div>
+<div id='bubble_related' hidden>{{bubble_related}}</div>
+
+<div class="d-flex flex-row">
+  {% include 'D3App/bubbles/singleBubble_bubbles.html' %}
+
+  {% include 'D3App/bubbles/singleBubble_bubbles_children.html' %}
+
+  {% if topic %}
+  <div class="card">{% include 'D3App/bubbles/update.html' %}</div>
+  {% endif %}
+
+</div>
+
+
+
