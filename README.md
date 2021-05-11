@@ -1,7 +1,7 @@
 # django_how_to_section
 
 ## abstract
-The projects that I present here are non standard beginner projects based on my own ideas. They are useful from the "how can I achieve this and that " point of view, they are however not optimized, contain no error handling and do not follow the *pep8* conventions. But I posted them anyway as they have been extremely useful for me, either from the didactic point of view or in terms of solving real world challenges. The project **django_machine_learning_supervised_classification** for example can be used by scientists to rapidly *classify their data via supervised learning methods*.  
+The projects that I present here are non standard beginner projects based on my own ideas or with a personal note. They illustrate how certain challenges can be mastered, they are however not optimized, contain no error handling and do not follow the *pep8* conventions. But I posted them anyway as they have been extremely useful for me, either from the didactic point of view or in terms of solving real world challenges. The project **django_machine_learning_supervised_classification** for example can be used by scientists to rapidly *classify their data via supervised learning methods*.  
 
 ## Content
 
